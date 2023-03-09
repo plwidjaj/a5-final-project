@@ -1,0 +1,29 @@
+div {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+
+    padding: 30px
+  }
+
+ion-datetime {
+  margin: auto
+}
+
+
+#confirm {
+  --background: #5B7553;
+  --color: #C3E8BD;
+ 
+  margin: 30px;
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }

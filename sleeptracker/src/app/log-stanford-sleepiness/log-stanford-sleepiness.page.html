@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> 
+    <ion-title class="ion-text-center">Log Stanford Sleepiness</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-icon name="pulse-outline" size="large"></ion-icon>
+    <h1>How sleepy are you feeling?</h1>
+    <ion-radio-group [(ngModel)]="loggedValue">
+      <ion-item>
+        <ion-label>1</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>2</ion-label>
+        <ion-radio value="2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>3</ion-label>
+        <ion-radio value="3"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>4</ion-label>
+        <ion-radio value="4"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>5</ion-label>
+        <ion-radio value="5"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>6</ion-label>
+        <ion-radio value="6"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>7</ion-label>
+        <ion-radio value="7"></ion-radio>
+      </ion-item>
+    </ion-radio-group> 
+  </div>  
+
+  <div id="confirm-container">
+    <ion-button id="confirm" (click)="confirm()" size="large"> Confirm </ion-button>
+  </div>
+
+
+
+</ion-content>

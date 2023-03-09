@@ -10,6 +10,20 @@ export class OvernightSleepData extends SleepData {
 		this.sleepEnd = sleepEnd;
 	}
 
+	getStartEnd():string {
+		let startEnd = this.sleepStart + "," + this.sleepEnd;
+		return startEnd
+	}
+
+	getStart():Date {
+		return this.sleepStart
+	}
+	
+	getEnd():Date {
+		return this.sleepEnd
+	}
+
+
 	summaryString():string {
 		var sleepStart_ms = this.sleepStart.getTime();
 		var sleepEnd_ms = this.sleepEnd.getTime();
@@ -24,4 +38,6 @@ export class OvernightSleepData extends SleepData {
 	dateString():string {
 		return "Night of " + this.sleepStart.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
 	}
+
+
 }

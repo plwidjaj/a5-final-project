@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> 
+    <ion-title text-align="center" position="absolute">Log Overnight Sleep</ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div id="start-container">
+    <ion-icon name="bed-outline" size="large"></ion-icon>
+    <h1>What time did you fall asleep?</h1>
+    <ion-datetime name="sleep-start" presentation="time-date" preferWheel="true" [(ngModel)]="startDate"></ion-datetime>
+  </div>
+  
+  <div id="end-container">
+    <ion-icon name="sunny-outline" size="large"></ion-icon>
+    <h1>What time did you wake up?</h1>
+    <ion-datetime name="sleep-end" [min]="startDate" presentation="time-date" preferWheel="true" [(ngModel)]="endDate"></ion-datetime>
+  </div>
+
+  <div id="confirm-container">
+    <ion-button id="confirm" (click)="confirm()" size="large"> Confirm </ion-button>
+  </div>
+
+</ion-content>
