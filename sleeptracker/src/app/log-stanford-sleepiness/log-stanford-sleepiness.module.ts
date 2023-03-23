@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { LogStanfordSleepinessPageRoutingModule } from './log-stanford-sleepiness-routing.module';
 
 import { LogStanfordSleepinessPage } from './log-stanford-sleepiness.page';
+import { HandtrackerComponent } from '../handtracker/handtracker.component';
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { LogStanfordSleepinessPage } from './log-stanford-sleepiness.page';
     IonicModule,
     LogStanfordSleepinessPageRoutingModule
   ],
-  declarations: [LogStanfordSleepinessPage]
+  declarations: [LogStanfordSleepinessPage, HandtrackerComponent]
 })
 export class LogStanfordSleepinessPageModule {}
